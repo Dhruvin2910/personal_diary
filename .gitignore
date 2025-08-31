@@ -1,0 +1,12 @@
+#dependencies
+node_modules/
+
+#environment variable
+.env
+
+#logs
+npm-debug.log*
+
+# local development only
+username/
+
