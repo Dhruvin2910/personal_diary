@@ -98,8 +98,3 @@ The server will run on `http://localhost:8000`.
 * `GET /notes/search?query=term&tag=tag` - Search notes by title or tag
 
 ---
-
-## Contact
-
-Created by **\[Dhruvin Patel]**.
-Feel free to reach out for questions or contributions!
