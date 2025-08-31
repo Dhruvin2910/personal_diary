@@ -101,5 +101,5 @@ The server will run on `http://localhost:8000`.
 
 ## Contact
 
-Created by **\Dhruvin Patel**.
+Created by **\[Dhruvin Patel]**.
 Feel free to reach out for questions or contributions!
