@@ -3,29 +3,29 @@ Got it! Since you haven’t added a license, we should remove that section from 
 ````markdown
 # Diary App Backend
 
-A RESTful backend for a personal diary application built with **Node.js**, **Express.js**, and **MongoDB**. This backend allows users to securely create, read, update, and delete diary entries. It supports user authentication, role-based access, and features like search, tagging, and soft deletion of notes.
+A RESTful backend for a personal diary application built with Node.js, Express.js, and MongoDB. This backend allows users to securely create, read, update, and delete diary entries. It supports user authentication, role-based access, and features like search, tagging, and soft deletion of notes.
 
 ---
 
 ## Features
 
-- User registration and login with **JWT** authentication
+- User registration and login with JWT authentication
 - Create, read, update, and delete diary entries
 - Tag-based categorization of notes
 - Full-text search for diary entries
 - Soft delete and archive functionality
-- Secure password hashing with **bcrypt**
+- Secure password hashing with bcrypt
 
 ---
 
 ## Technologies Used
 
-- **Node.js** - JavaScript runtime
-- **Express.js** - Web framework
-- **MongoDB** - NoSQL database
-- **Mongoose** - MongoDB object modeling
-- **JWT** - Authentication tokens
-- **bcrypt** - Password hashing
+- Node.js - JavaScript runtime
+- Express.js - Web framework
+- MongoDB - NoSQL database
+- Mongoose - MongoDB object modeling
+- JWT - Authentication tokens
+- bcrypt - Password hashing
 
 ---
 
@@ -44,6 +44,19 @@ cd diary-app-backend
 
 3. Install dependencies:
 
+This project uses the following main npm packages:
+
+- bcrypt – Password hashing  
+- cloudinary – Cloud image storage  
+- cookie-parser – Parsing cookies  
+- dotenv – Load environment variables  
+- express – Web framework  
+- jsonwebtoken – JWT authentication  
+- mongodb – MongoDB driver  
+- mongoose – MongoDB object modeling  
+- multer – Handling file uploads  
+- multer-storage-cloudinary – Multer storage adapter for Cloudinary  
+- nodemon – Development server auto-reload 
 ```bash
 npm install
 ```
@@ -51,15 +64,17 @@ npm install
 4. Create a `.env` file and add the following environment variables:
 
 ```env
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-PORT=5000
+MONGO_CONN=your_mongodb_atlas_connection_string
+SECRETE_KEY=your_secret_key_for_jwt
+CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARI_SECRET=your_cloudinary_secret_key
 ```
 
 5. Start the server:
 
 ```bash
-npm run dev
+nodemon index.js
 ```
 
 The server will run on `http://localhost:8000`.
